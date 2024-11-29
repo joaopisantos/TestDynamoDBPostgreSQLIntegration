@@ -1,0 +1,15 @@
+type PostgreEntity {
+    id: ID!
+    name: String!
+    description: String!
+}
+
+type DynamoModel {
+    id: ID!
+    data: String!
+}
+
+type Query {
+    getPostgreEntities: [PostgreEntity]
+    getDynamoData(id: ID!): DynamoModel
+}

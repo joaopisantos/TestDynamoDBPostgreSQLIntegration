@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: postgres
+    password: yourpassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+dynamodb:
+  endpoint: http://localhost:8000
+  region: us-west-2
+  accessKey: yourAccessKey
+  secretKey: yourSecretKey
